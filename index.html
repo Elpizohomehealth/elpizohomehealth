@@ -1,547 +1,170 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Elpizo Home Health Physical Therapy</title>
+  <meta name="description" content="In-home physical therapy focused on mobility, balance, strength, and safe independence." />
+  <style>
+    :root { --bg:#ffffff; --text:#111827; --muted:#6b7280; --line:#e5e7eb; --accent:#111827; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{color:inherit}
+    .wrap{max-width:980px;margin:0 auto;padding:24px}
+    header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0}
+    nav{display:flex;gap:16px;align-items:center;justify-content:space-between}
+    .links{display:flex;gap:14px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:10px 14px;border:1px solid var(--text);border-radius:10px;text-decoration:none}
+    .btn.primary{background:var(--text);color:#fff}
+    .hero{padding:56px 0}
+    .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px}
+    @media (max-width: 820px){ .grid{grid-template-columns:1fr} header{position:static}}
+    .card{border:1px solid var(--line);border-radius:14px;padding:18px;background:#fff}
+    h1{font-size:40px;line-height:1.1;margin:0 0 12px}
+    h2{margin:0 0 10px;font-size:22px}
+    .muted{color:var(--muted)}
+    ul{margin:10px 0 0;padding-left:18px}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media (max-width: 820px){ .two{grid-template-columns:1fr} }
+    footer{border-top:1px solid var(--line);padding:22px 0;margin-top:36px}
+    label{display:block;font-weight:600;margin:10px 0 6px}
+    input, textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;font:inherit}
+    textarea{min-height:120px;resize:vertical}
+    .small{font-size:13px}
   </style>
 </head>
 <body>
-<p class="p1">&lt;!doctype html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="utf-8" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="Home health physical therapy services delivered in your home. Mobility, balance, post-surgical rehab, and fall prevention." /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Home Health Physical Therapy&lt;/title&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>:root{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--bg:#ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--text:#0f172a;<span class="Apple-converted-space">        </span>/* slate-900 */</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--muted:#475569; <span class="Apple-converted-space">      </span>/* slate-600 */</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--border:#e2e8f0;<span class="Apple-converted-space">      </span>/* slate-200 */</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--card:#f8fafc;<span class="Apple-converted-space">        </span>/* slate-50 */</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--accent:#0ea5e9;<span class="Apple-converted-space">      </span>/* sky-500 */</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--accent-dark:#0284c7; /* sky-600 */</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--shadow: 0 10px 30px rgba(2, 8, 23, 0.08);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--radius:16px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--max: 1080px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--pad: 24px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>*{box-sizing:border-box}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin:0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family:var(--font);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color:var(--text);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:var(--bg);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>line-height:1.5;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>a{color:inherit; text-decoration:none}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>a:hover{color:var(--accent-dark)}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.container{max-width:var(--max); margin:0 auto; padding:0 var(--pad)}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.btn{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:inline-flex; align-items:center; justify-content:center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:12px 16px; border-radius:12px; border:1px solid var(--border);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:var(--text); color:white; font-weight:600;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transition:transform .05s ease, background .2s ease, border-color .2s ease;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.btn:hover{background:#111827}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.btn:active{transform:translateY(1px)}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.btn.secondary{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:white; color:var(--text); border-color:var(--border);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.pill{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:inline-flex; gap:8px; align-items:center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:6px 10px; border:1px solid var(--border); border-radius:999px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:white; color:var(--muted); font-size:14px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* Header */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>header{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>position:sticky; top:0; z-index:10;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:rgba(255,255,255,.9);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>backdrop-filter:saturate(180%) blur(10px);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-bottom:1px solid var(--border);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.nav{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:flex; align-items:center; justify-content:space-between;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>height:64px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.logo{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:flex; gap:10px; align-items:center; font-weight:800; letter-spacing:.2px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.mark{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width:34px; height:34px; border-radius:10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid var(--border);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:linear-gradient(180deg, #ffffff, #f1f5f9);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:grid; place-items:center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 6px 18px rgba(2, 8, 23, 0.06);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color:var(--accent-dark); font-weight:900;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>nav a{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color:var(--muted);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-left:18px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight:600;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size:14px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>nav a:hover{color:var(--text)}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* Hero */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:64px 0 28px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:</p>
-<p class="p1"><span class="Apple-converted-space">        </span>radial-gradient(900px 380px at 20% 0%, rgba(14,165,233,.10), transparent 55%),</p>
-<p class="p1"><span class="Apple-converted-space">        </span>radial-gradient(900px 380px at 90% 20%, rgba(2,132,199,.08), transparent 55%);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero-grid{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:grid;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: 1.15fr .85fr;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap:28px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items:stretch;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero h1{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size:44px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>line-height:1.08;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin:14px 0 14px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing:-.6px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.lead{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size:18px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color:var(--muted);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin:0 0 22px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width:62ch;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.actions{display:flex; gap:12px; flex-wrap:wrap}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero-card{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid var(--border);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius:var(--radius);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow:var(--shadow);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:22px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:flex; flex-direction:column; gap:14px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero-card h3{margin:0; font-size:16px}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero-card p{margin:0; color:var(--muted); font-size:14px}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.list{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin:0; padding:0; list-style:none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:grid; gap:10px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.list li{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:flex; gap:10px; align-items:flex-start;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:10px 12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid var(--border);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius:12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:var(--card);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.dot{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width:10px; height:10px; border-radius:999px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top:5px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>flex:0 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* Sections */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>section{padding:52px 0}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.section-head{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:flex; justify-content:space-between; align-items:flex-end; gap:18px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom:18px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.section-head h2{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin:0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size:28px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing:-.3px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.section-head p{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin:0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color:var(--muted);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width:70ch;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* Services grid */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.grid{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:grid;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: repeat(3, 1fr);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap:16px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.card{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid var(--border);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius:var(--radius);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:18px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 8px 22px rgba(2, 8, 23, 0.05);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>min-height:140px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.card h3{margin:0 0 8px; font-size:16px}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.card p{margin:0; color:var(--muted); font-size:14px}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* About */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.about{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:grid;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: 1fr 1fr;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap:16px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items:start;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.about .card{min-height:auto}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.mini{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:grid;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: 1fr 1fr;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap:12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top:12px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.mini .card{padding:14px}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* Contact */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.contact{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:grid;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: 1fr 1fr;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap:16px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>form{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:grid;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap:12px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>label{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight:700;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size:13px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>input, textarea{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width:100%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:12px 12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius:12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid var(--border);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family:var(--font);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size:14px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>outline:none;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>input:focus, textarea:focus{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-color: rgba(14,165,233,.8);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 0 0 4px rgba(14,165,233,.12);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>textarea{min-height:120px; resize:vertical}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.help{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size:12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color:var(--muted);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin:0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.callout{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid var(--border);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius:var(--radius);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:linear-gradient(180deg, #ffffff, #f8fafc);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:18px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.callout h3{margin:0 0 6px; font-size:16px}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.callout p{margin:0; color:var(--muted); font-size:14px}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.contact-items{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top:14px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:grid;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap:10px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.contact-item{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>justify-content:space-between;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap:12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid var(--border);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius:12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size:14px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.contact-item span{color:var(--muted)}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.contact-item a{font-weight:700}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* Footer */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>footer{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-top:1px solid var(--border);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:26px 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color:var(--muted);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size:13px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.footer-grid{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>justify-content:space-between;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap:16px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap:wrap;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items:flex-start;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.fineprint{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width:90ch;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color:var(--muted);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* Responsive */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 920px){</p>
-<p class="p1"><span class="Apple-converted-space">      </span>.hero-grid{grid-template-columns:1fr}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>.grid{grid-template-columns:1fr}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>.about{grid-template-columns:1fr}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>.contact{grid-template-columns:1fr}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>nav{display:none}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>.hero h1{font-size:38px}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="nav"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a class="logo" href="#top" aria-label="Home"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="mark"&gt;PT&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;span&gt;Home Health Physical Therapy&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;nav aria-label="Primary navigation"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="#services"&gt;Services&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="#about"&gt;About&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="#contact"&gt;Contact&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;main id="top"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- HERO --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="hero"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="pill"&gt;In-home care • Mobility • Balance • Strength&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hero-grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;Physical therapy delivered in the comfort of your home.&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="lead"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>Home health physical therapy focused on safe mobility, functional strength, and confidence with daily activities.</p>
-<p class="p1"><span class="Apple-converted-space">              </span>Visits are individualized and based on your goals and physician plan of care when applicable.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="actions"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;a class="btn" href="#contact"&gt;Request a callback&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;a class="btn secondary" href="#services"&gt;View services&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="help" style="margin-top:12px;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;strong&gt;Note:&lt;/strong&gt; Please do not submit protected health information (PHI) through this website.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;aside class="hero-card" aria-label="Key information"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;What to expect&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Clear plan, measurable progress, and home-friendly exercises.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul class="list"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;&lt;span class="dot" aria-hidden="true"&gt;&lt;/span&gt;&lt;div&gt;&lt;strong&gt;Safety-first approach&lt;/strong&gt;&lt;br&gt;&lt;span style="color:var(--muted); font-size:14px;"&gt;Fall-risk screening and home setup recommendations.&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;&lt;span class="dot" aria-hidden="true"&gt;&lt;/span&gt;&lt;div&gt;&lt;strong&gt;Functional goals&lt;/strong&gt;&lt;br&gt;&lt;span style="color:var(--muted); font-size:14px;"&gt;Walking, stairs, transfers, and daily activity tolerance.&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;&lt;span class="dot" aria-hidden="true"&gt;&lt;/span&gt;&lt;div&gt;&lt;strong&gt;Communication&lt;/strong&gt;&lt;br&gt;&lt;span style="color:var(--muted); font-size:14px;"&gt;Coordination with caregivers and providers as needed.&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/aside&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- SERVICES --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="services"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="section-head"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Services&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>Treatment is tailored to your presentation, home environment, and goals.</p>
-<p class="p1"><span class="Apple-converted-space">              </span>Services may include the following components.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid" role="list"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="card" role="listitem"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Balance &amp; Fall Prevention&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Balance training, gait assessment, and practical strategies to reduce fall risk at home.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="card" role="listitem"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Post-Surgical &amp; Post-Hospital Rehab&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Progressive mobility, strength, and walking programs to support a safe return to daily routines.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="card" role="listitem"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Strength &amp; Mobility&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Targeted exercises to improve joint motion, functional strength, and movement efficiency.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="card" role="listitem"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Gait Training&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Walking mechanics, endurance progression, and assistive device education when appropriate.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="card" role="listitem"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Home Safety Recommendations&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Environmental setup guidance for safe transfers, bathroom navigation, and daily activity pacing.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="card" role="listitem"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Chronic Pain &amp; Conditioning&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Education and graded activity to improve tolerance and function while respecting symptoms.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ABOUT --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="about"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="section-head"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;About&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>This practice provides in-home physical therapy with a clear, respectful, and evidence-informed approach.</p>
-<p class="p1"><span class="Apple-converted-space">              </span>Care is individualized and adjusted based on progress and safety.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="about"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Care philosophy&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>Home health PT should be practical and easy to follow. Sessions focus on what matters most:</p>
-<p class="p1"><span class="Apple-converted-space">              </span>safe mobility, confidence with daily tasks, and a simple home program you can maintain.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mini"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="card" style="box-shadow:none; background:var(--card);"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 style="margin-bottom:6px;"&gt;Clear plan&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Goals, timeline, and milestones that make sense for your situation.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="card" style="box-shadow:none; background:var(--card);"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 style="margin-bottom:6px;"&gt;Home-friendly&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Exercises and strategies that work with your space and equipment.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Service area &amp; scheduling&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>Visits are provided within a defined local service area. Scheduling depends on availability and clinical fit.</p>
-<p class="p1"><span class="Apple-converted-space">              </span>If you have a physician referral or home health order, include that when you call.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mini"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="card" style="box-shadow:none; background:var(--card);"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 style="margin-bottom:6px;"&gt;Serving&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;strong&gt;City / County:&lt;/strong&gt; &lt;span style="color:var(--muted);"&gt;Add your service area here&lt;/span&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="card" style="box-shadow:none; background:var(--card);"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 style="margin-bottom:6px;"&gt;License&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;strong&gt;PT License #:&lt;/strong&gt; &lt;span style="color:var(--muted);"&gt;Add your license number&lt;/span&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- CONTACT --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="contact"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="section-head"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Contact&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>For scheduling questions or general inquiries, reach out using the options below.</p>
-<p class="p1"><span class="Apple-converted-space">              </span>Please do not submit protected health information (PHI) through this form.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="contact"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;!-- Contact Form (static HTML). For Netlify Forms, add: data-netlify="true" and a hidden input "form-name". --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 style="margin-top:0;"&gt;Request a callback&lt;/h3&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;form name="callback" method="post" action="#" aria-label="Callback request form"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;label for="name"&gt;Name&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;input id="name" name="name" autocomplete="name" required /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;label for="phone"&gt;Phone&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;input id="phone" name="phone" autocomplete="tel" inputmode="tel" required /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;label for="email"&gt;Email (optional)&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;input id="email" name="email" type="email" autocomplete="email" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;label for="message"&gt;Message (general only)&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;textarea id="message" name="message" placeholder="Briefly share what you're looking for (no medical details)."&gt;&lt;/textarea&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="help"&gt;Do not include diagnoses, medications, or other medical details.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;button class="btn" type="submit"&gt;Send request&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;p class="help"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>By submitting, you understand this site is for general contact only and does not provide medical advice.</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/form&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="callout"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Other ways to reach us&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Prefer to call? We can answer basic questions and share next steps.&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="contact-items" aria-label="Direct contact options"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="contact-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;span&gt;Phone&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="tel:+10000000000"&gt;(000) 000-0000&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="contact-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;span&gt;Email&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="mailto:hello@yourdomain.com"&gt;hello@yourdomain.com&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="contact-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;span&gt;Service area&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;strong&gt;City / County&lt;/strong&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="help" style="margin-top:14px;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>If this is an emergency, call 911 or seek immediate medical care.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/main&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="footer-grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;strong&gt;Home Health Physical Therapy&lt;/strong&gt;&lt;br /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;span&gt;City / County • PT License #: ______&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="fineprint"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;strong&gt;Disclaimer:&lt;/strong&gt; This website is for general information and contact purposes only and does not</p>
-<p class="p1"><span class="Apple-converted-space">          </span>provide medical advice. Do not submit protected health information (PHI) through this website. A therapist-patient</p>
-<p class="p1"><span class="Apple-converted-space">          </span>relationship is not established until an evaluation is completed and appropriate consent and documentation are in place.</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div style="margin-top:10px;"&gt;© &lt;span id="year"&gt;&lt;/span&gt; Home Health Physical Therapy. All rights reserved.&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>// Set current year in footer</p>
-<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById("year").textContent = new Date().getFullYear();</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <div><strong>Elpizo Home Health PT</strong></div>
+      <div class="links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#areas">Service Area</a>
+        <a href="#contact" class="btn primary">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero grid">
+    <div>
+      <h1>In-Home Physical Therapy focused on safe independence.</h1>
+      <p class="muted">
+        Personalized visits to improve mobility, strength, balance, and confidence at home.
+        Evidence-based care with a practical plan you can follow between sessions.
+      </p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:14px">
+        <a class="btn primary" href="#contact">Request availability</a>
+        <a class="btn" href="#services">View services</a>
+      </div>
+      <p class="small muted" style="margin-top:14px">
+        Note: This site is informational and does not provide medical advice. If this is an emergency, call 911.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Quick info</h2>
+      <p class="muted" style="margin:0 0 10px">Typical reasons for home PT:</p>
+      <ul>
+        <li>Balance training / fall risk reduction</li>
+        <li>Post-op rehab (hip/knee, etc.)</li>
+        <li>Gait training, stairs, transfers</li>
+        <li>Strength & endurance for daily activities</li>
+        <li>Back/neck pain mobility and conditioning</li>
+      </ul>
+      <p class="small muted" style="margin-top:12px">
+        Want to confirm fit? Send a message below with your location and goals.
+      </p>
+    </div>
+  </section>
+
+  <section id="services" class="two">
+    <div class="card">
+      <h2>Services</h2>
+      <ul>
+        <li>Home safety & fall-prevention plans</li>
+        <li>Strength, mobility, and conditioning</li>
+        <li>Balance & vestibular basics (as appropriate)</li>
+        <li>Post-op progression and functional retraining</li>
+        <li>Gait training, assistive device training</li>
+        <li>Caregiver education and home exercise programs</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>What to expect</h2>
+      <ul>
+        <li>Initial evaluation (movement, strength, balance)</li>
+        <li>Clear plan with measurable goals</li>
+        <li>Exercises tailored to your home setup</li>
+        <li>Progress checks and adjustments each visit</li>
+        <li>Education for long-term self-management</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="about" style="margin-top:16px" class="card">
+    <h2>About</h2>
+    <p class="muted" style="margin-top:0">
+      I provide in-home physical therapy with a practical, patient-centered approach.
+      My focus is improving function you can feel in daily life—walking, stairs, transfers, and confidence at home.
+    </p>
+    <p class="small muted">
+      Add your credentials here (e.g., PT, DPT • State license # • Years of experience • Special interests).
+    </p>
+  </section>
+
+  <section id="areas" style="margin-top:16px" class="card">
+    <h2>Service area</h2>
+    <p class="muted" style="margin-top:0">
+      Serving: <strong>[Your city / counties]</strong> • In-home visits by appointment.
+    </p>
+    <p class="small muted">Tip: list 5–10 nearby cities/zip codes for local SEO.</p>
+  </section>
+
+  <section id="contact" style="margin-top:16px" class="card">
+    <h2>Contact</h2>
+    <p class="muted" style="margin-top:0">
+      Send a message with your location, goals, and the best way to reach you.
+    </p>
+
+    <!-- Netlify Forms: works when deployed on Netlify -->
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
+      <label for="name">Name</label>
+      <input id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
+
+      <label for="phone">Phone (optional)</label>
+      <input id="phone" name="phone" />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <div style="margin-top:12px">
+        <button class="btn primary" type="submit">Send</button>
+      </div>
+    </form>
+
+    <p class="small muted" style="margin-top:12px">
+      Please do not include sensitive medical details in this form. We can discuss specifics securely.
+    </p>
+  </section>
+
+  <footer>
+    <div class="small muted">
+      © <span id="y"></span> Elpizo Home Health PT • All rights reserved
+    </div>
+  </footer>
+</main>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
